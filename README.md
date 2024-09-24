@@ -17,7 +17,7 @@ This project aims to help students become familiar with command-line operations 
 2. Navigate to the project directory:
 
     ```sh
-    cd cmd-practice
+    cd atlas-cmd-practice-garage
     ```
 
 Happy coding!
