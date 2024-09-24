@@ -1,0 +1,18 @@
+[
+    {
+        "make": "chevy",
+        "model": "sonic",
+        "year": "2016",
+        "color": "blue",
+        "id": "4c04916e-06b8-48e7-aa5f-8843d6475266",
+        "num_doors": "4"
+    },
+    {
+        "make": "buick",
+        "model": "lacrosse",
+        "year": "2016",
+        "color": "silver",
+        "id": "4d50e49b-cac5-489c-bd3e-5776c0bfad34",
+        "num_doors": "4"
+    }
+]
