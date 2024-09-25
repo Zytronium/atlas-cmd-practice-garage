@@ -1,8 +1,10 @@
 import json
 
 from models.car import Car
+from models.colors import set_color, reset_color
 from models.truck import Truck
 from models.vehicle import Vehicle
+import models.colors
 
 
 class Garage:
@@ -16,9 +18,18 @@ class Garage:
     def remove_vehicle(self, vehicle) -> None:
         self.vehicles.remove(vehicle)
 
-    def list_vehicles(self) -> None:
+    def list_vehicles(self, colored=False, numbered = False) -> None:
+        i = 0
         for vehicle in self.vehicles:
+            if colored:
+                set_color(vehicle.color)
+
+            if numbered:
+                print(f"[{i}]: ", end='')
+                i += 1
             print(vehicle)
+            if colored:
+                reset_color()
 
     def save_garage(self) -> None:
         with open('garage.json', 'w') as f:
